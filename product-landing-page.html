@@ -3,16 +3,22 @@
     <title>Product Landing Page</title>
 
     <style>
+           * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+         }
         #header {
-            position: fixed;
             background-color: cornflowerblue;
-            text-align: right;
-            height: 40px;
+            position: fixed;
             width: 100%;
+            height: 40px;
             top: 0;
             left: 0;
+            float: left;
         }
         #header-img {
+            position: fixed;
             margin: 10px;
             float: left;
             width: 20px;
@@ -23,10 +29,10 @@
             text-decoration: none;
             color: black;
             font-family: Arial, Helvetica, sans-serif;
-            position: relative;
             top: 10px;
 			padding-right: 50px;
-			
+            padding-top: 10px;
+            float: right;
         }
         a:hover {
             text-decoration: underline;
@@ -36,13 +42,11 @@
             width: 100%;
             max-width: auto;
             padding-top: 40px;
-            top: 0px;
-            left: 0;
 
         }
         #page-container {
             background-color: lightskyblue;
-            width: auto%;
+            width: auto;
             height: auto;
             top: 0px;
             left: 0;
@@ -88,6 +92,8 @@
         }
        
     </style>
+
+</head>
 
 </head>
 
@@ -143,13 +149,17 @@
             Nulla rhoncus ex vitae mi congue tempus. Morbi ut tempor risus. Quisque aliquam rutrum augue. Donec venenatis imperdiet justo, quis laoreet tortor luctus nec. Duis lobortis lectus vel ex auctor, in molestie enim aliquam. Aliquam tincidunt ligula nisl, non laoreet est pharetra sed. Integer in ante id felis congue lacinia eu ac neque. Nullam pulvinar sapien eget odio porta laoreet id eu nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vitae felis ac ipsum fringilla tincidunt vel eu metus. Donec ut ipsum orci.</p>
 
 
-            <div id=video>
-
-                <p>Check the video</p>
+            <video id=video
+              src="https://www.youtube.com/embed/nqHRClaYrEI"
+             />
+          </video>
+              
+          
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/nqHRClaYrEI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
-            </div>
+             
+            
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo odio, rutrum placerat urna eget, varius porta lacus. Nullam maximus turpis metus, et consectetur tellus congue at. Morbi nec est facilisis, vestibulum nunc vitae, aliquam leo. Praesent quis semper dui, sit amet pretium ligula. Donec mattis, lacus sit amet tempus pulvinar, massa sapien eleifend felis, eu convallis turpis urna quis est. Mauris eu ullamcorper erat. Nulla blandit pellentesque erat sit amet tincidunt. Donec odio purus, ullamcorper ullamcorper mi congue, malesuada rutrum justo. Curabitur et massa felis.
 
@@ -181,7 +191,7 @@
                 
                 Nulla rhoncus ex vitae mi congue tempus. Morbi ut tempor risus. Quisque aliquam rutrum augue. Donec venenatis imperdiet justo, quis laoreet tortor luctus nec. Duis lobortis lectus vel ex auctor, in molestie enim aliquam. Aliquam tincidunt ligula nisl, non laoreet est pharetra sed. Integer in ante id felis congue lacinia eu ac neque. Nullam pulvinar sapien eget odio porta laoreet id eu nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vitae felis ac ipsum fringilla tincidunt vel eu metus. Donec ut ipsum orci.</p>
             
-            <form id=form>
+            <form id=form action="https://www.freecodecamp.com/email-submit">
 
                 <input 
                     type="email"
@@ -190,8 +200,7 @@
                     placeholder="Enter your Email"
                     required="required"
                 />
-                <input 
-                    action="https://www.freecodecamp.com/email-submit"
+                <input
                     type="submit"
                     id="submit" 
                     value="Submit"
